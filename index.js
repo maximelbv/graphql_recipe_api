@@ -16,7 +16,7 @@ mongoose
   .connect(MONGODB_CONNEXION_STRING, { useNewUrlParser: true })
   .then(() => {
     console.log("MongoDB Connexion successful");
-    return server.listen({ port: 5000 });
+    return server.listen({ port: 5001 });
   })
   .then((res) => {
     console.log(`Server running at ${res.url}`);
